@@ -35,7 +35,7 @@ function OrderDetailedComponent({ orderId }) {
       })
       .then((data) => {
         // console.log(data);
-        navigate(0);
+        navigate("/");
       })
       .catch((error) => {
         setError(error);
@@ -58,7 +58,7 @@ function OrderDetailedComponent({ orderId }) {
         return response.json();
       })
       .then((data) => {
-        navigate(0);
+        navigate("/");
       })
       .catch((error) => {
         setError(error);
