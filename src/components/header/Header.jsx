@@ -2,16 +2,17 @@ import React from "react";
 import { BiListUl, BiSearch, BiBell, BiMessageAltDetail } from "react-icons/bi";
 import Logo from "../../assets/img/logo.png";
 import ProfileImage from "../../assets/img/profile-img.jpg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
       <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
-          <a class="logo d-flex align-items-center">
+          <Link to="/" class="logo d-flex align-items-center">
             <img src={Logo} alt="" />
             <span class="d-none d-lg-block">Hampton House</span>
-          </a>
+          </Link>
           <BiListUl size="30px" />
         </div>
 
